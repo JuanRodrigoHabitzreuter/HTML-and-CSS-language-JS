@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Controle de Estacionamento</title>
+		<!-- TODOS os links CSS devem ficar aqui, no ÚNICO head -->
+		<link rel="stylesheet" href="css/shared.css" />
+		<link rel="stylesheet" href="css/index.css" />
+	</head>
+	<body>
+		<header class="cabecalho">
+			<div class="cabecalho-container">
+				<img src="img/2837826-car-parking-location-pin-vector-icon-vetor.jpg" alt="Ícone Estacionamento" class="icone-cabecalho" />
+				<h1>Cadastro de Reserva</h1>
+			</div>
+		</header>
+
+		<main>
+			<form id="reservaForm">
+				<input type="number" id="vaga" placeholder="Vaga (1-30)" required min="1" max="30" />
+				<input type="text" id="placa" placeholder="Placa do veículo" required pattern="([A-Za-z]{3}\d[A-Za-z]\d{2}|[A-Za-z]{3}\d{4})" title="Formato inválido. A placa deve ser LLL-N-LNN ou LLL-NNNN, onde L é letra e N é número." />
+				<input type="text" id="proprietario" placeholder="Nome do proprietário" required pattern="[A-Za-zÀ-ÿ\s]+" title="Use apenas letras e espaços." />
+				<input type="text" id="apartamento" placeholder="Número do apartamento" required pattern="\d{3}" title="Digite exatamente 3 números." maxlength="3" />
+				<input type="text" id="bloco" placeholder="Bloco do apartamento" required pattern="[ABC]" title="Digite apenas A, B ou C (maiúsculas)." maxlength="1" />
+				<input type="text" id="modelo" placeholder="Modelo do veículo" required pattern="[A-Za-zÀ-ÿ\s]+" title="Digite apenas letras e espaços." />
+				<input type="text" id="cor" placeholder="Cor do veículo" required pattern="[A-Za-zÀ-ÿ]+" title="Digite apenas letras." />
+				<button type="submit" id="botaoSalvar">💾Salvar</button>
+				<button type="button" id="botaoBuscar">🔍 Buscar Vaga</button>
+				<button type="button" id="botaoIrParaLista">📋 Ver Lista de Vagas</button>
+
+				<script>
+					document.getElementById('botaoIrParaLista').addEventListener('click', function() {
+						window.location.href = 'list.html';
+					});
+				</script>
+			</form>
+		</main>
+		<footer class="footer">
+			<div class="footer-content">
+				<h3>Condomínio Fantasia</h3>
+				<p>Rua Fictícia, nº 0000</p>
+				<p>CEP: 00000-000</p>
+				<p>Telefone: XX XXXX-XXXX</p>
+				<div class="footer-bottom">
+					<p>&copy; 2025 Condomínio Fantasia - Todos os direitos reservados</p>
+				</div>
+			</div>
+		</footer>
+
+		<script src="scripts/cadastro.js"></script>
+	</body>
+</html>

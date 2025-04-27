@@ -1,0 +1,96 @@
+/* ===== Estilos gerais (comuns às duas páginas) ===== */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background-color: #f5f5f5; /* Cor de fundo clara */
+}
+
+/* Cabeçalho */
+header {
+  height: 81px;
+  background-color: #003366;
+  color: white;
+  padding: 10px 20px; /* Redução o padding vertical display: flex; /* Ativa flexbox para alinhar itens */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  text-align: center;
+  margin: 0 auto 30px auto;
+  border-radius: 5px;
+  max-width: 1045px;
+  position: relative; /* Para posicionamento absoluto interno (se necessário) */
+}
+
+.header-logo {
+  height: 60px; /* Altura da imagem (ajuste conforme necessário) */
+  width: auto; /* Mantém proporção */
+  margin-right: 15px; /* Espaço entre a imagem e o texto (se houver) */
+}
+
+/* Conteúdo principal */
+main {
+  max-width: 1000px; /* Largura máxima */
+  margin: 0 auto; /* Centraliza na página */
+  background-color: white; /* Fundo branco */
+  padding: 20px;
+  border-radius: 8px; /* Cantos arredondados */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+/* Rodapé (posição e margem) */
+footer {
+  text-align: center;
+  margin-top: 20px;
+}
+
+/* Estilo dos links */
+a {
+  color: #003366; /* Azul escuro */
+  text-decoration: none; /* Remove sublinhado */
+  font-weight: bold; /* Negrito */
+}
+
+a:hover {
+  text-decoration: underline; /* Sublinhado ao passar o mouse */
+}
+
+/* ===== Rodapé com estilo semelhante ao cabeçalho ===== */
+footer {
+  background-color: #003366; /* Fundo azul escuro */
+  color: #ecf0f1; /* Texto cinza claro */
+  padding: 20px;
+  max-width: 1000px; /* Largura igual ao main */
+  margin: 20px auto 0 auto; /* Centralizado com espaçamento superior */
+  text-align: left; /* Alinha conteúdo à esquerda */
+  border-radius: 5px;
+}
+
+/* Conteúdo do rodapé */
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Título dentro do rodapé */
+.footer-content h3 {
+  margin: 0.5rem 0; /* Espaço menor */
+  font-size: 1.2rem; /* Tamanho do texto reduzido */
+  color: #fff; /* Texto branco */
+}
+
+/* Parágrafos do rodapé */
+.footer-content p {
+  margin: 0.3rem 0;
+  font-size: 0.95rem;
+}
+
+/* Parte inferior do rodapé (linha e texto final) */
+.footer-bottom {
+  margin-top: 0.5rem;
+  padding-top: 0.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.1); /* Linha sutil */
+  font-size: 0.85rem; /* Tamanho menor */
+  color: #bdc3c7; /* Texto cinza claro */
+  text-align: center; /* Centraliza o texto */
+}

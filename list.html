@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Controle de Reservas de Vagas</title>
+
+		<!-- Estilos compartilhados e específicos da página -->
+		<link rel="stylesheet" href="css/shared.css" />
+		<link rel="stylesheet" href="css/list.css" />
+	</head>
+	<body>
+		<!-- Cabeçalho da página -->
+		<div class="cabecalho-container">
+			<header class="cabecalho">
+				<img src="img/images.png" alt="Ícone Estacionamento" class="icone-cabecalho" />
+				<h1 class="titulo-principal">Vagas de Estacionamento Reservadas</h1>
+			</header>
+		</div>
+
+		<!-- Conteúdo principal -->
+		<main class="conteudo-principal">
+			<!-- Tabela de vagas reservadas -->
+			<div class="container-tabela">
+				<table class="tabela-vagas">
+					<thead class="cabecalho-tabela">
+						<tr>
+							<th>Vaga</th>
+							<th>Placa</th>
+							<th>Proprietário</th>
+							<th>Apartamento</th>
+							<th>Bloco</th>
+							<th>Modelo</th>
+							<th>Cor</th>
+						</tr>
+					</thead>
+					<tbody class="corpo-tabela">
+						<!-- As linhas da tabela serão inseridas dinamicamente via JavaScript -->
+					</tbody>
+					<tr>
+                        <td>1</td>
+                        <td>ABC-1234</td>
+                        <td>João Silva</td>
+                        <td>101</td>
+                        <td>A</td>
+                        <td>Fusca</td>
+                        <td>Azul</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td>DEF-5678</td>
+                        <td>Maria Souza</td>
+                        <td>102</td>
+                        <td>B</td>
+                        <td>Gol</td>
+                        <td>Preto</td>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td>GHI-9012</td>
+                        <td>Carlos Oliveira</td>
+                        <td>103</td>
+                        <td>C</td>
+                        <td>Palio</td>
+                        <td>Branco</td>
+                    </tr>
+                    <tr>
+                        <td>4</td>
+                        <td>JKL-3456</td>
+                        <td>Patricia Lima</td>
+                        <td>104</td>
+                        <td>A</td>
+                        <td>Civic</td>
+                        <td>Cinza</td>
+                    </tr>
+                    <tr>
+                        <td>5</td>
+                        <td>MNO-7890</td>
+                        <td>Roberto Almeida</td>
+                        <td>105</td>
+                        <td>B</td>
+                        <td>Fiesta</td>
+                        <td>Vermelho</td>
+                    </tr>
+                    <tr>
+                        <td>6</td>
+                        <td>PQR-1234</td>
+                        <td>Ana Costa</td>
+                        <td>106</td>
+                        <td>C</td>
+                        <td>Kia</td>
+                        <td>Amarelo</td>
+                    </tr>
+                    <tr>
+                        <td>7</td>
+                        <td>STU-5678</td>
+                        <td>Felipe Martins</td>
+                        <td>107</td>
+                        <td>A</td>
+                        <td>Corolla</td>
+                        <td>Prata</td>
+                    </tr>
+                    <tr>
+                        <td>8</td>
+                        <td>VWX-9012</td>
+                        <td>Juliana Pereira</td>
+                        <td>108</td>
+                        <td>B</td>
+                        <td>Sandero</td>
+                        <td>Azul</td>
+                    </tr>
+                    <tr>
+                        <td>9</td>
+                        <td>YZA-3456</td>
+                        <td>Ricardo Fernandes</td>
+                        <td>109</td>
+                        <td>C</td>
+                        <td>HB20</td>
+                        <td>Preto</td>
+                    </tr>
+                    <tr>
+                        <td>10</td>
+                        <td>BCD-7890</td>
+                        <td>Luciana Rocha</td>
+                        <td>110</td>
+                        <td>A</td>
+                        <td>Ka</td>
+                        <td>Branco</td>
+                    </tr>
+				</table>
+			</div>
+
+			<!-- Seção de vagas disponíveis -->
+			<section class="secao-vagas">
+				<button onclick="irParaCadastro()">Cadastrar Nova Vaga</button>
+				<button onclick="excluir()">Excluir</button>
+				<script>
+					function irParaCadastro() {
+					    window.location.href = 'index.html';
+					}
+				</script>
+
+				<h2 class="subtitulo">Vagas Disponíveis</h2>
+
+				<div id="vagasDisponiveis" class="contador-vagas">Carregando...</div>
+			</section>
+		</main>
+
+		<!-- Rodapé da página -->
+		<footer>
+			<div class="footer-content">
+				<h3>Condomínio Fantasia</h3>
+				<p>Rua Fictícia, nº 0000</p>
+				<p>CEP: 00000-000</p>
+				<p>Telefone: XX XXXX-XXXX</p>
+
+				<!-- Parte inferior do rodapé -->
+				<div class="footer-bottom">
+					<p>&copy; 2025 Condomínio Fantasia - Todos os direitos reservados</p>
+				</div>
+			</div>
+		</footer>
+
+		<!-- Script responsável por carregar as vagas -->
+		<script src="scripts/listagem.js"></script>
+	</body>
+</html>

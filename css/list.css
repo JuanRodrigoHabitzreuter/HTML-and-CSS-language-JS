@@ -1,0 +1,120 @@
+/* Estilos específicos da página de listagem */
+.container-tabela {
+  margin: 20px auto;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.tabela-vagas {
+  width: 100%;
+  border-collapse: collapse;
+  margin-bottom: 20px;
+  text-align: center; /* Centraliza o texto */
+}
+
+.cabecalho-tabela {
+  background-color: #003366;
+  color: white;
+}
+
+.cabecalho-tabela th,
+.cabecalho-vagas- td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: center;
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2;
+}
+
+#vagasDisponiveis {
+  font-weight: bold;
+  font-size: 18px;
+  padding: 10px;
+  background-color: #e6f7ff;
+  border-radius: 4px;
+  text-align: center;
+}
+.subtitulo {
+  text-align: center; /* <<< Centraliza o texto */
+  margin-bottom: 10px; /* <<< Espaço abaixo do título (opcional) */
+  background-color: #e6f7ff;
+  padding: 10px;
+  color: green;
+}
+
+/* Estilos do cabeçalho com imagem */
+.cabecalho-container {
+  width: 96%; /* <<< Diminui a largura para 90% da tela */
+  max-width: 1200px; /* <<< Limita para não ficar gigante em telas grandes */
+  margin: 0 auto; /* <<< Centraliza no body */
+  display: flex; /* Layout em linha (flexbox) */
+  align-items: center; /* Alinhamento vertical central */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 5px; /* Espaço entre os elementos */
+  padding: 15px; /* Espaçamento interno */
+  text-align: center;
+}
+
+.cabecalho {
+  width: 85%; /* Tamanho do conteúdo dentro */
+  margin: 0 auto; /* Centraliza o conteúdo */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.logo {
+  height: 10px; /* Altura ajustável */
+  width: auto; /* Largura proporcional */
+}
+
+.icone-cabecalho {
+  height: 98px; /* ou o tamanho que você quiser */
+  width: auto;
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3));
+  position: relative; /* Permite posicionamento manual */
+  left: -170px; /* Move a imagem para a esquerda */
+  top: 0px; /* Move a imagem para baixo */
+}
+
+.titulo-principal {
+  color: white;
+  margin: 10px 0 0 0; /* Move 10px para cima (top) */
+  font-size: 2, 3rem; /* Tamanho do texto */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Estilos para o botão Cadastrar Nova Vaga */
+.secao-vagas button:nth-child(1) {
+  background-color: #4caf50; /* Cor verde */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho do texto */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em forma de mão */
+  position: relative; /* Permite posicionamento manual */
+  right: -710px; /* Move a imagem para a esquerda */
+  top: 0px; /* Move a imagem para baixo */
+}
+
+/* Estilos para o botão Excluir */
+.secao-vagas button:nth-child(2) {
+  background-color: #f44336; /* Cor vermelha */
+  color: white; /* Texto branco */
+  border: none; /* Sem borda */
+  padding: 10px 20px; /* Espaçamento interno */
+  font-size: 16px; /* Tamanho do texto */
+  border-radius: 5px; /* Bordas arredondadas */
+  cursor: pointer; /* Cursor em forma de mão */
+  position: relative; /* Permite posicionamento manual */
+  right: -715px; /* Move a imagem para a esquerda */
+  top: 0px; /* Move a imagem para baixo */
+}
+
+.secao-vagas button:hover {
+  opacity: 0.8;
+}

@@ -1,0 +1,141 @@
+/* Estilos da tabela de vagas */
+.container-tabela {
+  margin: 20px auto; /* Centraliza e adiciona espaçamento externo */
+  width: 100%; /* Ocupa toda a largura disponível */
+  overflow-x: auto; /* Ativa rolagem horizontal se necessário */
+}
+
+.tabela-vagas {
+  width: 100%; /* Tabela ocupa 100% da largura */
+  border-collapse: collapse; /* Remove espaçamento entre as bordas das células */
+  margin-bottom: 20px; /* Espaçamento inferior */
+}
+
+.cabecalho-tabela {
+  background-color: #003366; /* Cor de fundo azul escuro */
+  color: white; /* Texto branco */
+}
+
+.cabecalho-tabela th,
+.tabela-vagas td {
+  border: 1px solid #ddd; /* Bordas cinza claras */
+  padding: 12px; /* Espaçamento interno nas células */
+  text-align: left; /* Alinhamento do texto à esquerda */
+}
+
+tbody tr:nth-child(odd) {
+  background-color: #f2f2f2; /* Cor alternada para linhas ímpares (zebra) */
+}
+
+/* Estilo do aviso de vagas disponíveis */
+#vagasDisponiveis {
+  font-weight: bold; /* Texto em negrito */
+  font-size: 18px; /* Tamanho maior da fonte */
+  padding: 15px; /* Espaçamento interno */
+  background-color: #e6f7ff; /* Fundo azul claro */
+  border-radius: 4px; /* Bordas arredondadas */
+  text-align: center; /* Centraliza o texto */
+}
+
+/* Estilos para o cabeçalho com imagem decorativa */
+.cabecalho-container {
+  display: flex; /* Layout em linha (flexbox) */
+  align-items: center; /* Alinhamento vertical central */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 5px; /* Espaço entre os elementos */
+  padding: 5px; /* Espaçamento interno */
+  text-align: center;
+}
+
+.icone-cabecalho {
+  height: 110px; /* Altura fixa da imagem */
+  width: auto; /* Largura proporcional */
+  filter: drop-shadow(0 0 2px rgba(0, 0, 0, 0.3)); /* Sombra sutil */
+  position: relative; /* Permite posicionamento manual */
+  left: 628px; /* Move a imagem para a esquerda */
+  top: 0px; /* Move a imagem para baixo */
+}
+
+/* Estilo do cabeçalho principal com logo e título do app */
+.cabecalho {
+  background-color: #003366; /* Fundo azul escuro */
+  display: flex; /* Layout flexível para alinhar itens */
+  align-items: center; /* Centraliza verticalmente */
+  justify-content: center; /* Centraliza horizontalmente */
+  gap: 15px; /* Espaço entre logo e título */
+  padding: 15px 0; /* Espaçamento vertical */
+}
+
+.logo {
+  height: 20px; /* Altura da logo */
+  width: auto; /* Largura proporcional */
+}
+
+.titulo {
+  color: white; /* Cor do texto */
+  margin: 0; /* Remove margens padrão */
+  font-size: 1.5rem; /* Tamanho do título */
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); /* Sombra para destacar o texto */
+}
+
+/* Estilos do formulário */
+form {
+  display: grid;
+  grid-template-columns: 1fr 1fr; /* Duas colunas com largura igual */
+  gap: 1px; /* Espaço entre os elementos */
+  max-width: 2000px; /* Largura máxima do container (ajuste conforme necessário) */
+  margin: 10px auto; /* Centraliza na página */
+}
+
+/* Estilo dos inputs */
+input {
+  padding: 12px; /* Espaçamento interno nas caixas de texto */
+  border: 1px solid #ddd; /* Borda cinza clara */
+  border-radius: 4px; /* Bordas arredondadas */
+  font-size: 16px; /* Tamanho da fonte */
+  width: calc(
+    50% - 10px
+  ); /* Cada input ocupará metade da largura com um espaço entre eles */
+  margin-bottom: 15px; /* Espaçamento inferior entre os inputs */
+}
+
+/* Estilo do botão Salvar */
+button {
+  padding: 12px 20px; /* Espaçamento interno nos botões */
+  background-color: #003366; /* Fundo azul escuro */
+  color: white; /* Texto branco */
+  border: none; /* Remove bordas padrão */
+  border-radius: 4px; /* Bordas arredondadas */
+  cursor: pointer; /* Mostra cursor de clique */
+  font-size: 16px; /* Tamanho da fonte */
+  width: 100%; /* Botões ocupando 100% da largura */
+  margin-top: 10px; /* Espaçamento superior entre os botões */
+}
+
+/* Estilo dos botões ao passar o mouse */
+button:hover {
+  background-color: #00509e;
+}
+
+/* Responsividade - para telas menores */
+@media (max-width: 768px) {
+  input {
+    width: 100%; /* Inputs vão ocupar 100% da largura em telas pequenas */
+  }
+
+  form {
+    gap: 10px; /* Diminui o espaço entre os campos */
+  }
+}
+.busca-container {
+  display: grid;
+  grid-template-columns: 2fr 1fr; /* Duas colunas com largura igual */
+  gap: 5px; /* Espaço entre os elementos */
+  max-width: 1200px; /* Largura máxima do container (ajuste conforme necessário) */
+  margin: 20px auto; /* Margem reduzida (20px top/bottom) e centralização horizontal (auto) */
+  padding: 0 15px; /* Opcional: evita colar nas bordas em telas pequenas */
+  /* Posicionamento no canto inferior direito */
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
